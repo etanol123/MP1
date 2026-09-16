@@ -7,6 +7,8 @@ class MenuFood {
 }
 
 
+
+
 int hitungPesanan(List<Map<String, dynamic>> pesanan, List<MenuFood> menuList) {
   int total = 0;
   print("=== PESANAN ===");
@@ -31,15 +33,13 @@ void main() {
 
   print("=== KANTINKAMPUS ===");
   print("DAFTAR MENU:");
-  // 2. Menampilkan seluruh menu
+
   for (int i = 0; i < menu.length; i++) {
     String status = menu[i].tersedia ? "Tersedia" : "Tidak Tersedia";
     print("${i + 1}. ${menu[i].nama} - Rp${menu[i].harga} - $status");
   }
   
-
   print("");
-
 
   List<Map<String, dynamic>> pesanan = [
     {"nama": "Nasi Goreng", "jumlah": 2},

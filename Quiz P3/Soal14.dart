@@ -1,7 +1,7 @@
 class Menu {
   String nama;
   int harga;
-  String kategori; // Properti Kategori ditambahkan
+  String kategori; 
 
   Menu(this.nama, this.harga, this.kategori);
 }
@@ -12,4 +12,24 @@ void main() {
     Menu("Mie Ayam", 12000, "Makanan"),
     Menu("Ayam Geprek", 18000, "Makanan"),
     Menu("Soto Ayam", 14000, "Makanan"),
-    Menu("Es Teh", 
+    Menu("Es Teh", 5000, "Minuman")
+  ];
+
+  print("=== MENU MAKANAN ===");
+  int counterMakanan = 1;
+  for (var m in menuList) {
+    if (m.kategori == "Makanan") {
+      print("$counterMakanan. ${m.nama} - Rp${m.harga}");
+      counterMakanan++;
+    }
+  }
+
+  print("=== MENU MINUMAN ===");
+  int counterMinuman = 1;
+  for (var m in menuList) {
+    if (m.kategori == "Minuman") {
+      print("$counterMinuman. ${m.nama} - Rp${m.harga}");
+      counterMinuman++;
+    }
+  }
+}
