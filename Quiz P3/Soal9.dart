@@ -11,7 +11,7 @@ class Food {
   }
 }
 
-// Class Turunan penamaan drinks
+// Class Turunan penamaan Drink
 class Drink extends Food {
   Drink(String nama, int harga) : super(nama, harga);
   
