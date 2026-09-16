@@ -1,4 +1,3 @@
-// Function menghitung harga setelah diskon
 double hitungDiskon(int harga, double persentaseDiskon) {
   return harga - (harga * (persentaseDiskon / 100));
 }
