@@ -6,7 +6,7 @@ class MenuFood {
   MenuFood(this.nama, this.harga, this.tersedia);
 }
 
-// Function untuk proses perhitungan
+
 int hitungPesanan(List<Map<String, dynamic>> pesanan, List<MenuFood> menuList) {
   int total = 0;
   print("=== PESANAN ===");
@@ -20,7 +20,7 @@ int hitungPesanan(List<Map<String, dynamic>> pesanan, List<MenuFood> menuList) {
 }
 
 void main() {
-  // 1. Menyimpan data menu menggunakan object
+
   List<MenuFood> menu = [
     MenuFood("Nasi Goreng", 15000, true),
     MenuFood("Mie Ayam", 12000, true),
@@ -37,18 +37,16 @@ void main() {
     print("${i + 1}. ${menu[i].nama} - Rp${menu[i].harga} - $status");
   }
   
-  // (3. Logic ini bisa ditambahkan jika spesifik menu yang tersedia)
-  // for (var m in menu.where((m) => m.tersedia)) { print(m.nama); }
-  
+
   print("");
 
-  // Data pesanan
+
   List<Map<String, dynamic>> pesanan = [
     {"nama": "Nasi Goreng", "jumlah": 2},
     {"nama": "Es Teh", "jumlah": 2}
   ];
 
-  // 4 & 5. Menghitung dan mencetak pesanan menggunakan function
+
   int totalBayar = hitungPesanan(pesanan, menu);
   print("Total Bayar = Rp$totalBayar");
 }

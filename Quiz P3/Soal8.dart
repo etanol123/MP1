@@ -1,10 +1,9 @@
 class MenuFood {
   String nama;
-  int _harga; // Menjadikan properti harga private (diawali underscore)
+  int _harga; 
 
   MenuFood(this.nama, this._harga);
 
-  // Getter untuk membaca harga
   int get harga => _harga;
 }
 
@@ -13,5 +12,4 @@ void main() {
 
   print("Nama  : ${mieAyam.nama}");
   print("Harga : Rp${mieAyam.harga}"); 
-  // Program tetap dapat mengambil nilai harga melalui getter
 }

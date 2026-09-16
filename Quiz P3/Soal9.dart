@@ -11,11 +11,11 @@ class Food {
   }
 }
 
-// Class Turunan (hanya penamaan struktur untuk Drinks, pewarisan bisa bervariasi logicnya)
+// Class Turunan penamaan drinks
 class Drink extends Food {
   Drink(String nama, int harga) : super(nama, harga);
   
-  // Method dioverride dengan bentuk (polymorphism) jika dibutuhkan
+
   @override
   void tampilkanInformasi() {
     print("Nama  : $nama");
@@ -24,7 +24,7 @@ class Drink extends Food {
 }
 
 void main() {
-  // Memanfaatkan polymorphism dengan menyimpan dalam satu tipe referensi List yang sama
+
   List<Food> daftarProduk = [
     Food("Ayam Geprek", 18000),
     Drink("Es Teh", 5000)
