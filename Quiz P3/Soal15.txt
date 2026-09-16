@@ -12,3 +12,4 @@ Jawaban:
 2. Konsep Object-Oriented Programming (OOP), terutama saat menerapkan Inheritance dan Polymorphism. Kadang masih bingung membagikan mana property yang cocok di class induk dan mana yang harus di-override di class anak.
 3. Lupa titik koma (;) di akhir baris, typo penulisan nama variabel atau tipe data, dan lupa memasukkan tanda kurung siku [] atau kurung kurawal {} pada List dan Map.
 4. Function membuat kode jadi tidak bertumpuk di main() karena tugas-tugas kecil (seperti menghitung diskon) dipisah sendiri. Sementara OOP membuat kode jadi terorganisasi rapi sesuai objek dunianya (seperti MenuFood). Kalau ada bug atau mau nambah fitur baru, tidak perlu mengacak-acak seluruh isi program.
+Alhamdulillah beres
